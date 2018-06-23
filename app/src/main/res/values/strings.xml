@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CodelandOOP</string>
+    <string-array name="fases">
+        <item>Fase 1</item>
+        <item>Fase 2</item>
+        <item>Fase 3</item>
+        <item>Fase 4</item>
+    </string-array>
+    <string-array name="fase1">
+        <item>Concepto de Poo</item>
+        <item>Concepto de abstracción</item>
+        <item>¿Qué es un objeto?</item>
+        <item>¿Qué es una clase?</item>
+        <item>Cuestionario</item>
+        <item>Ejercicios</item>
+    </string-array>
+    <string-array name="fase2">
+        <item>¿Qué es un constructor?</item>
+        <item>¿Qué es un destructor?</item>
+        <item>Geters </item>
+        <item>Seters </item>
+        <item>Cuestionario</item>
+        <item>Ejercicios</item>
+    </string-array>
+    <string-array name="fase3">
+        <item>Métodos/Variables privadas</item>
+        <item>Métodos/Variables publicas</item>
+        <item>Métodos/Variables protegidas</item>
+        <item>Cuestionario</item>
+        <item>Ejercicio</item>
+    </string-array>
+    <string-array name="fase4">
+        <item>Herencia</item>
+        <item>Polimorfismo</item>
+        <item>Encapsulamiento</item>
+        <item>Cuestionario</item>
+        <item>Ejercicios</item>
+    </string-array>
+</resources>
