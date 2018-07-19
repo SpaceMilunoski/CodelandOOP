@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fases">
+    tools:context=".fases"
+    android:background="@color/colorTextIcons">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="50dp"
-    android:paddingBottom="60dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
     <ListView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/lvTemas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:divider="@color/colorTextIcons"
+        android:dividerHeight="10dp">
     </ListView>
 </LinearLayout>
 </RelativeLayout>

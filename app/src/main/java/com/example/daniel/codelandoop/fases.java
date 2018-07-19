@@ -42,7 +42,7 @@ public class fases extends AppCompatActivity {
         else if (i==3){
             items=getResources().getStringArray(R.array.fase4);
         }
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items);
+        Adapter adapter = new Adapter(this, items);
         lvFases.setAdapter(adapter);
         lvFases.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
