@@ -19,5 +19,10 @@ public class temas extends AppCompatActivity {
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return false;
     }
 }

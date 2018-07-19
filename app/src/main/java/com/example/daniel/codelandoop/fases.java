@@ -51,5 +51,11 @@ public class fases extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        if(getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return false;
     }
 }
