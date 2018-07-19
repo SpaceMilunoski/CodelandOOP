@@ -17,6 +17,8 @@ public class temas extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setTitle("Titulo del Tema");
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

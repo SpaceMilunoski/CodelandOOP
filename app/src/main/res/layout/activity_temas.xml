@@ -38,16 +38,68 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <android.support.v7.widget.CardView
+        <LinearLayout
+            android:layout_marginTop="70dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="5dp"
-            app:cardUseCompatPadding="true">
-            <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorTextIcons">
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"></LinearLayout>
-        </android.support.v7.widget.CardView>
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:id="@+id/temas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="@color/colorTextIcons">
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="Tema"/>
+                <TextView
+                    android:id="@+id/tvContenido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"/>
+                    <LinearLayout
+                        android:layout_marginTop="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <Button
+                            android:id="@+id/btCs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C#"
+                            android:background="@color/colorAccent"/>
+                        <Button
+                            android:id="@+id/btJava"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Java"
+                            android:background="@color/colorAccent"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"/>
+                        <Button
+                            android:id="@+id/btCmm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C++"
+                            android:background="@color/colorAccent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>
