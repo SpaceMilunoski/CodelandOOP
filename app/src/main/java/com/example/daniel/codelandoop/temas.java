@@ -9,22 +9,56 @@ import android.view.View;
 import android.widget.Button;
 
 public class temas extends AppCompatActivity {
-
+    AlertDialog.Builder tema;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temas);
-
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        final Button btnCs = (Button) findViewById(R.id.btCs);
+        final Button btnJava = (Button) findViewById(R.id.btJava);
+        final Button btnCmm = (Button) findViewById(R.id.btCmm);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setTitle("Titulo del Tema");
+        toolbar.setTitle("Titulo de la fase");
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        tema = new AlertDialog.Builder(temas.this);
+        btnCmm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrarEjemplo();
+            }
+        });
+        btnCs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrarEjemplo();
+            }
+        });
+        btnJava.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrarEjemplo();
+            }
+        });
     }
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return false;
+    }
+    public void mostrarEjemplo(){
+        tema.setMessage("Class ejemplo{\n" +
+                "   contenido;\n" +
+                "}");
+        //tema.setView(mView);
+        tema.setPositiveButton("Ok",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog dialog = tema.create();
+        dialog.show();
     }
 }
