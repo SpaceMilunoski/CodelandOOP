@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class temas extends AppCompatActivity {
     AlertDialog.Builder tema;
@@ -18,6 +20,8 @@ public class temas extends AppCompatActivity {
         final Button btnCs = (Button) findViewById(R.id.btCs);
         final Button btnJava = (Button) findViewById(R.id.btJava);
         final Button btnCmm = (Button) findViewById(R.id.btCmm);
+        final TextView tvTemas = (TextView) findViewById(R.id.tvContenido);
+        String [] items = {};
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setTitle("Titulo de la fase");
@@ -42,6 +46,10 @@ public class temas extends AppCompatActivity {
                 mostrarEjemplo();
             }
         });
+        items=getResources().getStringArray(R.array.tf1);
+        tvTemas.setText(items[0]);
+
+
     }
     public boolean onSupportNavigateUp() {
         onBackPressed();
