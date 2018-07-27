@@ -35,53 +35,56 @@ public class temas extends AppCompatActivity {
         btnCmm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo();
+                mostrarEjemplo("Class ejemplo{\n" +
+                        "   contenido;\n" +
+                        "}");
             }
         });
         btnCs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo();
+                mostrarEjemplo("Class ejemplo{\n" +
+                        "   contenido;\n" +
+                        "}");
             }
         });
         btnJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo();
+                mostrarEjemplo("Class ejemplo{\n" +
+                        "   contenido;\n" +
+                        "}");
             }
         });
         if (fase==0){
             items=getResources().getStringArray(R.array.tf1);
             temas=getResources().getStringArray(R.array.fase1);
-            tvTituloo.setText(temas[posicion]);
+            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==1){
             items=getResources().getStringArray(R.array.tf2);
             temas=getResources().getStringArray(R.array.fase2);
-            tvTituloo.setText(temas[posicion]);
+            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==2){
             items=getResources().getStringArray(R.array.tf3);
             temas=getResources().getStringArray(R.array.fase3);
-            tvTituloo.setText(temas[posicion]);
+            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==3){
             items=getResources().getStringArray(R.array.tf4);
             temas=getResources().getStringArray(R.array.fase4);
-            tvTituloo.setText(temas[posicion]);
+            //tvTituloo.setText(temas[posicion]);
         }
-        tvTemas.setText(items[posicion]);
-
-
+            tvTituloo.setText(temas[posicion]);
+            tvTemas.setText(items[posicion]);
     }
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return false;
     }
-    public void mostrarEjemplo(){
-        tema.setMessage("Class ejemplo{\n" +
-                "   contenido;\n" +
-                "}");
+    public void mostrarEjemplo(String mensaje){
+        tema.setMessage(mensaje);
         //tema.setView(mView);
         tema.setPositiveButton("Ok",
                 new DialogInterface.OnClickListener() {

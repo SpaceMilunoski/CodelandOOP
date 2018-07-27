@@ -40,15 +40,22 @@ public class fases extends AppCompatActivity {
             items=getResources().getStringArray(R.array.fase4);
         }
         final int j = i;
+        final int ni = items.length;
         Adapter adapter = new Adapter(this, items);
         lvFases.setAdapter(adapter);
         lvFases.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(fases.this,temas.class);
-                i.putExtra("tema",position);
-                i.putExtra("fase",j);
-                startActivity(i);
+                if (position==ni-2){
+
+                }else if (position==ni-1){
+
+                }else {
+                    Intent i = new Intent(fases.this,temas.class);
+                    i.putExtra("tema",position);
+                    i.putExtra("fase",j);
+                    startActivity(i);
+                }
             }
         });
         if(getSupportActionBar() != null)
