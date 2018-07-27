@@ -69,7 +69,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
                     android:textColor="@color/colorSecondaryText"
-                    android:text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"/>
+                    android:gravity="center_horizontal"
+                    android:text=""/>
                     <LinearLayout
                         android:layout_marginTop="60dp"
                         android:layout_width="match_parent"
