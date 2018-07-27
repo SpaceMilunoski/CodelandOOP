@@ -8,7 +8,6 @@
         <item>El constructor es un método especial de una clase. El objetivo fundamental del constructor es inicializar los atributos del objeto que creamos. Características:
 Un constructor tiene el mismo nombre de la clase que pertenece.
             El constructor es el primer método que se ejecuta cuando se crea un objeto.
-
 El constructor se llama automáticamente cuando instanciamos el objeto.
  Luego de que se ejecuta el constructor no puede ser llamado nuevamente.
  Un constructor no puede retornar dato.

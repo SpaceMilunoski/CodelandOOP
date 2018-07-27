@@ -21,7 +21,7 @@ public class temas extends AppCompatActivity {
         final Button btnJava = (Button) findViewById(R.id.btJava);
         final Button btnCmm = (Button) findViewById(R.id.btCmm);
         final TextView tvTemas = (TextView) findViewById(R.id.tvContenido);
-        final TextView tvTitulo = (TextView) findViewById(R.id.tvTitulo);
+        final TextView tvTituloo = (TextView) findViewById(R.id.tvTitulo);
         String [] items = {};
         String [] temas = {};
         setSupportActionBar(toolbar);
@@ -52,16 +52,23 @@ public class temas extends AppCompatActivity {
         });
         if (fase==0){
             items=getResources().getStringArray(R.array.tf1);
-
+            temas=getResources().getStringArray(R.array.fase1);
+            tvTituloo.setText(temas[posicion]);
         }
         else if (fase==1){
             items=getResources().getStringArray(R.array.tf2);
+            temas=getResources().getStringArray(R.array.fase2);
+            tvTituloo.setText(temas[posicion]);
         }
         else if (fase==2){
             items=getResources().getStringArray(R.array.tf3);
+            temas=getResources().getStringArray(R.array.fase3);
+            tvTituloo.setText(temas[posicion]);
         }
         else if (fase==3){
             items=getResources().getStringArray(R.array.tf4);
+            temas=getResources().getStringArray(R.array.fase4);
+            tvTituloo.setText(temas[posicion]);
         }
         tvTemas.setText(items[posicion]);
 
