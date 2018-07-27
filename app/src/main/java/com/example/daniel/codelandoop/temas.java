@@ -21,10 +21,14 @@ public class temas extends AppCompatActivity {
         final Button btnJava = (Button) findViewById(R.id.btJava);
         final Button btnCmm = (Button) findViewById(R.id.btCmm);
         final TextView tvTemas = (TextView) findViewById(R.id.tvContenido);
+        final TextView tvTitulo = (TextView) findViewById(R.id.tvTitulo);
         String [] items = {};
+        String [] temas = {};
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setTitle("Titulo de la fase");
+        int fase = getIntent().getIntExtra("fase",0);
+        int posicion = getIntent().getIntExtra("tema",0);
+        toolbar.setTitle("Fase "+String.valueOf(fase +1));
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         tema = new AlertDialog.Builder(temas.this);
@@ -46,8 +50,20 @@ public class temas extends AppCompatActivity {
                 mostrarEjemplo();
             }
         });
-        items=getResources().getStringArray(R.array.tf1);
-        tvTemas.setText(items[0]);
+        if (fase==0){
+            items=getResources().getStringArray(R.array.tf1);
+
+        }
+        else if (fase==1){
+            items=getResources().getStringArray(R.array.tf2);
+        }
+        else if (fase==2){
+            items=getResources().getStringArray(R.array.tf3);
+        }
+        else if (fase==3){
+            items=getResources().getStringArray(R.array.tf4);
+        }
+        tvTemas.setText(items[posicion]);
 
 
     }

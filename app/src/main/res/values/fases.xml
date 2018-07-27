@@ -2,8 +2,28 @@
 <resources>
     <string-array name="tf1">
         <item>La programacion orientada a objetos (POO, u OOP según sus siglas en inglés) es un paradigma de programación que usa objetos en sus interacciones, para diseñar aplicaciones y programas informáticos. Está basada en varias técnicas, incluyendo herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento.</item>
-        <item>sa</item>
+            <item>sa</item>
     </string-array>
+    <string-array name="tf2">
+        <item>El constructor es un método especial de una clase. El objetivo fundamental del constructor es inicializar los atributos del objeto que creamos. Características:
+Un constructor tiene el mismo nombre de la clase que pertenece.
+            El constructor es el primer método que se ejecuta cuando se crea un objeto.
+
+El constructor se llama automáticamente cuando instanciamos el objeto.
+ Luego de que se ejecuta el constructor no puede ser llamado nuevamente.
+ Un constructor no puede retornar dato.
+ Un constructor puede recibir parámetros que se utilizan normalmente para inicializar atributos. El constructor es un método opcional, no es obligación colocarlo y depende del diseño de la clase y la tarea que se quiera realizar.
+</item>
+        <item>Los destructores se utilizan para destruir instancias de clases. El destructor limpia cualquiera de los recursos no administrados creados por la aplicación. Solo puede haber un destructor para una clase.</item>
+        <item>El método get (obtener) es un método que se utiliza para obtener valores de los atributos de la clase con el modificador de acceso privado</item>
+        <item> El Método set (establecer, colocar) es un método que se utiliza para asignarle valores a los atributos de la clase con el modificador de acceso privado.</item>
+    </string-array>
+    <string-array name="tf3">
+    </string-array>
+    <string-array name="tf4">
+    </string-array>
+
+
     <string-array name="ef1java">
 
     </string-array>

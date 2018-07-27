@@ -24,14 +24,11 @@ public class fases extends AppCompatActivity {
         final ListView lvFases = (ListView) findViewById(R.id.lvTemas);
         String [] items = {};
 
-
-
         int i = getIntent().getIntExtra("fase",0);
 
         Log.d(TAG, "onCreate: valor de fase: " + i);
         if (i==0){
             items=getResources().getStringArray(R.array.fase1);
-
         }
         else if (i==1){
             items=getResources().getStringArray(R.array.fase2);
@@ -42,12 +39,15 @@ public class fases extends AppCompatActivity {
         else if (i==3){
             items=getResources().getStringArray(R.array.fase4);
         }
+        final int j = i;
         Adapter adapter = new Adapter(this, items);
         lvFases.setAdapter(adapter);
         lvFases.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(fases.this,temas.class);
+                i.putExtra("tema",position);
+                i.putExtra("fase",j);
                 startActivity(i);
             }
         });
