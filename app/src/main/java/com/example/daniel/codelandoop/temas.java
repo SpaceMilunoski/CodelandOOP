@@ -25,11 +25,13 @@ public class temas extends AppCompatActivity {
         final TextView tvTituloo = (TextView) findViewById(R.id.tvTitulo);
         String [] items = {};
         String [] temas = {};
+        String [] nomFases = getResources().getStringArray(R.array.nomfases);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         int fase = getIntent().getIntExtra("fase",0);
         int posicion = getIntent().getIntExtra("tema",0);
-        toolbar.setTitle("Fase "+String.valueOf(fase +1));
+
+        toolbar.setTitle(String.valueOf(nomFases[fase]));
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         tema = new AlertDialog.Builder(temas.this);
@@ -60,22 +62,18 @@ public class temas extends AppCompatActivity {
         if (fase==0){
             items=getResources().getStringArray(R.array.tf1);
             temas=getResources().getStringArray(R.array.fase1);
-            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==1){
             items=getResources().getStringArray(R.array.tf2);
             temas=getResources().getStringArray(R.array.fase2);
-            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==2){
             items=getResources().getStringArray(R.array.tf3);
             temas=getResources().getStringArray(R.array.fase3);
-            //tvTituloo.setText(temas[posicion]);
         }
         else if (fase==3){
             items=getResources().getStringArray(R.array.tf4);
             temas=getResources().getStringArray(R.array.fase4);
-            //tvTituloo.setText(temas[posicion]);
         }
             tvTituloo.setText(temas[posicion]);
             tvTemas.setText(items[posicion]);
