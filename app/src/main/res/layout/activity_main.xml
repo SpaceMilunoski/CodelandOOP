@@ -105,7 +105,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center">
-
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
