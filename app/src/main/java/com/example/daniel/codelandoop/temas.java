@@ -26,57 +26,68 @@ public class temas extends AppCompatActivity {
         String [] items = {};
         String [] temas = {};
         String [] nomFases = getResources().getStringArray(R.array.nomfases);
+        String [] eCgato = {};
+        String [] eJava = {};
+        String [] eCplus = {};
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         int fase = getIntent().getIntExtra("fase",0);
         int posicion = getIntent().getIntExtra("tema",0);
-
         toolbar.setTitle(String.valueOf(nomFases[fase]));
         if(getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         tema = new AlertDialog.Builder(temas.this);
+        if (fase==0){
+            items=getResources().getStringArray(R.array.tf1);
+            temas=getResources().getStringArray(R.array.fase1);
+            eCgato=getResources().getStringArray(R.array.ef1C);
+            eJava=getResources().getStringArray(R.array.ef1java);
+            eCplus=getResources().getStringArray(R.array.ef1Cplus);
+        }
+        else if (fase==1){
+            items=getResources().getStringArray(R.array.tf2);
+            temas=getResources().getStringArray(R.array.fase2);
+            eCgato=getResources().getStringArray(R.array.ef2C);
+            eJava=getResources().getStringArray(R.array.ef2java);
+            eCplus=getResources().getStringArray(R.array.ef2Cplus);
+        }
+        else if (fase==2){
+            items=getResources().getStringArray(R.array.tf3);
+            temas=getResources().getStringArray(R.array.fase3);
+            eCgato=getResources().getStringArray(R.array.ef3C);
+            eJava=getResources().getStringArray(R.array.ef3java);
+            eCplus=getResources().getStringArray(R.array.ef3Cplus);
+        }
+        else if (fase==3){
+            items=getResources().getStringArray(R.array.tf4);
+            temas=getResources().getStringArray(R.array.fase4);
+            eCgato=getResources().getStringArray(R.array.ef4C);
+            eJava=getResources().getStringArray(R.array.ef4java);
+            eCplus=getResources().getStringArray(R.array.ef4Cplus);
+        }
+            tvTituloo.setText(temas[posicion]);
+            tvTemas.setText(items[posicion]);
+        final String java=eJava[posicion];
+        final String cs=eCgato[posicion];
+        final String cmm=eCplus[posicion];
         btnCmm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo("Class ejemplo{\n" +
-                        "   contenido;\n" +
-                        "}");
+                mostrarEjemplo(cmm);
             }
         });
         btnCs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo("Class ejemplo{\n" +
-                        "   contenido;\n" +
-                        "}");
+                mostrarEjemplo(cs);
             }
         });
         btnJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mostrarEjemplo("Class ejemplo{\n" +
-                        "   contenido;\n" +
-                        "}");
+                mostrarEjemplo(java);
             }
         });
-        if (fase==0){
-            items=getResources().getStringArray(R.array.tf1);
-            temas=getResources().getStringArray(R.array.fase1);
-        }
-        else if (fase==1){
-            items=getResources().getStringArray(R.array.tf2);
-            temas=getResources().getStringArray(R.array.fase2);
-        }
-        else if (fase==2){
-            items=getResources().getStringArray(R.array.tf3);
-            temas=getResources().getStringArray(R.array.fase3);
-        }
-        else if (fase==3){
-            items=getResources().getStringArray(R.array.tf4);
-            temas=getResources().getStringArray(R.array.fase4);
-        }
-            tvTituloo.setText(temas[posicion]);
-            tvTemas.setText(items[posicion]);
     }
     public boolean onSupportNavigateUp() {
         onBackPressed();

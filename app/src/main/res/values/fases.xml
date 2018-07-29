@@ -7,15 +7,7 @@
         <item>Una clase es la descripción de un conjunto de objetos similares; consta de métodos y de datos que resumen las características comunes de dicho conjunto, se pueden definir muchos objetos de la misma clase de la misma forma que, en la vida real, haríamos galletas (objeto) con el mismo molde (clase) solo que, cada galleta tendría igual forma, pero es posible que tenga distinto sabor, textura, olor, color, etc.</item>
     </string-array>
     <string-array name="tf3">
-        <item>El constructor es un método especial de una clase. El objetivo fundamental del constructor es inicializar los atributos del objeto que creamos. Características:
-\n\n\n  • Un constructor tiene el mismo nombre de la clase que pertenece.\n\n
-            • El constructor es el primer método que se ejecuta cuando se crea un objeto.\n\n
- • El constructor se llama automáticamente cuando instanciamos el objeto.\n\n
-  • Luego de que se ejecuta el constructor no puede ser llamado nuevamente.\n\n
-  • Un constructor no puede retornar dato.\n\n
- • Un constructor puede recibir parámetros que se utilizan normalmente para inicializar atributos.\n\n
-            •  El constructor es un método opcional, no es obligación colocarlo y depende del diseño de la clase y la tarea que se quiera realizar.
-</item>
+        <item>El constructor es un método especial de una clase. El objetivo fundamental del constructor es inicializar los atributos del objeto que creamos. Características:\n\n\n  • Un constructor tiene el mismo nombre de la clase que pertenece.\n\n• El constructor es el primer método que se ejecuta cuando se crea un objeto.\n\n• El constructor se llama automáticamente cuando instanciamos el objeto.\n\n• Luego de que se ejecuta el constructor no puede ser llamado nuevamente.\n\n• Un constructor no puede retornar dato.\n\n• Un constructor puede recibir parámetros que se utilizan normalmente para inicializar atributos.\n\n•  El constructor es un método opcional, no es obligación colocarlo y depende del diseño de la clase y la tarea que se quiera realizar.</item>
         <item>Los destructores se utilizan para destruir instancias de clases. \n El destructor limpia cualquiera de los recursos no administrados creados por la aplicación. \n Solo puede haber un destructor para una clase.</item>
         <item>El método get (obtener) es un método que se utiliza para obtener valores de los atributos de la clase con el modificador de acceso privado</item>
         <item> El Método set (establecer, colocar) es un método que se utiliza para asignarle valores a los atributos de la clase con el modificador de acceso privado.</item>
@@ -39,20 +31,47 @@
     </string-array>
     <string-array name="ef2C">
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef2java">
-
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef2Cplus">
-
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef3C">
-
+        <item>class Persona{\n private:\n String nombre;\n String apellido;\n\npublic:\n// Constructor\nPersona(String nombre2, String apellido2)\n{\nnombre=nombre2;\napellido=apellido2;\n}\n};\n\n//implementación constructor\nPersona persona1(“Antonio”,”Ayola”);\n</item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef3java">
-
+        <item>public class Persona {\nprivate String nombre;\nprivate String apellido;\n\npublic Persona(String nombre, String apellido){\nthis.nombre = nombre;\nthis.apellido = apellido;\n}\n}\n\npublic class Main {\n\npublic static void main(String[] args) {\n\nPersona persona1 = new Persona("Antonio", "Ayola");\n}\n}\n</item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef3Cplus">
+        <item>public class Persona\n{\nprivate string nombre;\nprivate string apellido;\n\npublic Persona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\n}\n//implementación\n\nPersona persona1 = new Persona(“Antonio”,”Ayola”);</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="ef4C">
+
+    </string-array>
+    <string-array name="ef4java">
+
+    </string-array>
+    <string-array name="ef4Cplus">
 
     </string-array>
 </resources>
