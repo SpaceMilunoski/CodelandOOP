@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 public class fases extends AppCompatActivity {
 
-    private static final String TAG = "fases";
+    //private static final String TAG = "fases";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class fases extends AppCompatActivity {
 
         int i = getIntent().getIntExtra("fase",0);
 
-        Log.d(TAG, "onCreate: valor de fase: " + i);
+        //Log.d(TAG, "onCreate: valor de fase: " + i);
         if (i==0){
             items=getResources().getStringArray(R.array.fase1);
         }
