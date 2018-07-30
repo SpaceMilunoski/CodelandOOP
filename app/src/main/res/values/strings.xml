@@ -8,7 +8,7 @@
     </string-array>
     <string-array name="nomfases">
         <item>Conceptos Basicos</item>
-        <item>Constructores y mètodos de acceso</item>
+        <item>Constructores y métodos de acceso</item>
         <item>Encapsulamiento</item>
         <item>Conceptos Avanzados</item>
     </string-array>
@@ -21,19 +21,19 @@
         <item>Ejercicios</item>
     </string-array>
     <string-array name="fase2">
-        <item>Métodos/Variables privadas</item>
-        <item>Métodos/Variables publicas</item>
-        <item>Métodos/Variables protegidas</item>
-        <item>Cuestionario</item>
-        <item>Ejercicios</item>
-    </string-array>
-    <string-array name="fase3">
         <item>¿Qué es un constructor?</item>
         <item>¿Qué es un destructor?</item>
         <item>Geters </item>
         <item>Seters </item>
         <item>Cuestionario</item>
         <item>Ejercicio</item>
+    </string-array>
+    <string-array name="fase3">
+        <item>Métodos/Variables privadas</item>
+        <item>Métodos/Variables publicas</item>
+        <item>Métodos/Variables protegidas</item>
+        <item>Cuestionario</item>
+        <item>Ejercicios</item>
     </string-array>
     <string-array name="fase4">
         <item>Herencia</item>

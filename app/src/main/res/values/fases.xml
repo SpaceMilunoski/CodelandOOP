@@ -6,20 +6,22 @@
         <item>Entidad provista de un conjunto de propiedades o atributos (datos) y de comportamiento o funcionalidad (métodos) los mismos que consecuentemente reaccionan a eventos.\n\nSe corresponde con los objetos reales del mundo que nos rodea, o a objetos internos del sistema (del programa).</item>
         <item>Una clase es la descripción de un conjunto de objetos similares; consta de métodos y de datos que resumen las características comunes de dicho conjunto, se pueden definir muchos objetos de la misma clase de la misma forma que, en la vida real, haríamos galletas (objeto) con el mismo molde (clase) solo que, cada galleta tendría igual forma, pero es posible que tenga distinto sabor, textura, olor, color, etc.</item>
     </string-array>
-    <string-array name="tf3">
+    <string-array name="tf2">
         <item>El constructor es un método especial de una clase. El objetivo fundamental del constructor es inicializar los atributos del objeto que creamos. Características:\n\n\n  • Un constructor tiene el mismo nombre de la clase que pertenece.\n\n• El constructor es el primer método que se ejecuta cuando se crea un objeto.\n\n• El constructor se llama automáticamente cuando instanciamos el objeto.\n\n• Luego de que se ejecuta el constructor no puede ser llamado nuevamente.\n\n• Un constructor no puede retornar dato.\n\n• Un constructor puede recibir parámetros que se utilizan normalmente para inicializar atributos.\n\n•  El constructor es un método opcional, no es obligación colocarlo y depende del diseño de la clase y la tarea que se quiera realizar.</item>
         <item>Los destructores se utilizan para destruir instancias de clases. \n El destructor limpia cualquiera de los recursos no administrados creados por la aplicación. \n Solo puede haber un destructor para una clase.</item>
         <item>El método get (obtener) es un método que se utiliza para obtener valores de los atributos de la clase con el modificador de acceso privado</item>
         <item> El Método set (establecer, colocar) es un método que se utiliza para asignarle valores a los atributos de la clase con el modificador de acceso privado.</item>
     </string-array>
-    <string-array name="tf2">
+    <string-array name="tf3">
         <item>Las variables/funciones privadas sólo pueden ser accedidas desde dentro de la misma clase. Todo intento de llamarlas desde la una instancia de la misma es en vano. Mantener variables/funciones privadas permiten tener un mayor control sobre la clase, sobre el modo como procesa sus métodos, como maneja sus variables, etc. Para declarar una variable/función como privada, se le antepone la palabra clave “private”.</item>
         <item>Una variable/función pública puede ser accedida desde fuera de la clase. Es decir, puedo acceder desde la instancia de la clase y no sólo desde el código interno de la clase. Ejemplo de funciones públicas son los métodos de una clase.\n\n También es posible crear variables públicas, para que puedan ser manejadas desde la instancia, pero no es algo común o recomendable, entre otras cosas porque deja un hueco de seguridad en la clase, acabando con la idea de la “encapsulación”. Para declarar una variable/función como pública, se le antepone la palabra clave “public”.</item>
         <item>Existe un tipo intermedio de ámbito, llamado “protegido”. Es un punto medio entre público y privado, porque -como ocurre con las privadas- no se puede acceder a ella desde una instancia de la clase, pero -como ocurre con las públicas- puede ser accedido desde las subclases de ésta, no importa si se encuentran o no en el mismo paquete. \n\nBásicamente significa que, si una clase hereda de otra, tendrá acceso a las variables/funciones protegidas de la super-clase, de lo contrario, no podrá acceder a ellas. Para declarar una variable como protegida, se le antepone la palabra clave “protected”.</item>
     </string-array>
     <string-array name="tf4">
+        <item>La herencia permite definir una nueva clase extendiendo una clase ya existente. Esta nueva clase (clase derivada) posee todas las características de la clase más general y, además, la extiende en algún sentido. Mediante la herencia, una clase derivada hereda los atributos y métodos definidos por la clase base.\n\n De esta forma se evita volver a describir estos atributos y operaciones, obteniéndose así una importante reutilización de código.</item>
+        <item>Es la propiedad que indica la posibilidad de que una entidad tome muchas formas. En otros términos, permite referirse a objetos de clases diferentes mediante el mismo elemento de programa y realizar la operación de diferentes formas, según sea el objeto que se referencia en ese mismo momento.</item>
+        <item>Cuando se desarrolla una aplicación, a veces es necesario ocultar los tipos de datos usados para que el usuario permanezca independiente de los detalles de los mismos. De esta manera, el usuario no es sensible a los cambios que se puedan producir en los tipos de datos elegidos dentro de una clase.\n\nLa encapsulación suele lograrse al declarar algunos datos como: privados (private) que solo son accesibles por los métodos de la clase a la que pertenece; públicos (public) que son accesibles desde cualquier lugar en el que exista un objeto de la clase; y protegidos (protected) que solo son accesibles desde las clases que se hereden de la clase que lo contiene.</item>
     </string-array>
-
     <string-array name="ef1C">
 
     </string-array>
@@ -30,48 +32,54 @@
 
     </string-array>
     <string-array name="ef2C">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-    </string-array>
-    <string-array name="ef2java">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-    </string-array>
-    <string-array name="ef2Cplus">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-    </string-array>
-    <string-array name="ef3C">
         <item>class Persona{\n private:\n String nombre;\n String apellido;\n\npublic:\n// Constructor\nPersona(String nombre2, String apellido2)\n{\nnombre=nombre2;\napellido=apellido2;\n}\n};\n\n//implementación constructor\nPersona persona1(“Antonio”,”Ayola”);\n</item>
         <item></item>
         <item></item>
         <item></item>
     </string-array>
-    <string-array name="ef3java">
+    <string-array name="ef2java">
         <item>public class Persona {\nprivate String nombre;\nprivate String apellido;\n\npublic Persona(String nombre, String apellido){\nthis.nombre = nombre;\nthis.apellido = apellido;\n}\n}\n\npublic class Main {\n\npublic static void main(String[] args) {\n\nPersona persona1 = new Persona("Antonio", "Ayola");\n}\n}\n</item>
         <item></item>
         <item></item>
         <item></item>
     </string-array>
-    <string-array name="ef3Cplus">
+    <string-array name="ef2Cplus">
         <item>public class Persona\n{\nprivate string nombre;\nprivate string apellido;\n\npublic Persona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\n}\n//implementación\n\nPersona persona1 = new Persona(“Antonio”,”Ayola”);</item>
         <item></item>
         <item></item>
         <item></item>
     </string-array>
+    <string-array name="ef3C">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="ef3java">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="ef3Cplus">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
     <string-array name="ef4C">
-
+        <item>\nclass Persona{\npublic string Nombre;\npublic int Edad;\n\nvoid Cumpleaños()\n{\nEdad++;\n}\npublic Persona (string nombre, int edad)\n{\nNombre = nombre;\nEdad = edad;\n}\n}\nclass Trabajador: Persona\n{\npublic int Sueldo;\nTrabajador(string nombre, int edad, int sueldo): base(nombre, edad)\n{\nSueldo = sueldo;\n}\npublic static void Main()\n{\nTrabajador p = new Trabajador("Josan", 22, "77588260-Z", 100000);\nConsole.WriteLine ("Nombre="+p.Nombre);\nConsole.WriteLine ("Edad="+p.Edad);\nConsole.WriteLine ("Sueldo="+p.Sueldo);\n }}</item>
+        <item>public string NIF;\npublic virtual void Cumpleaños()\n{\nConsole.WriteLine(“Incrementada edad de persona”);\n}\npublic Persona (string nombre, int edad, string nif)\n{\nNombre = nombre;\nEdad = edad;\nNIF = nif;\n}\n}\nclass Trabajador: Persona\n{\nint Sueldo; // Campo de cada objeto Trabajador que almacena cuánto gana\nTrabajador(string nombre, int edad, string nif, int sueldo): base(nombre, edad, nif)\n{ // Inicializamos cada Trabajador en base al constructor de Persona\nSueldo = sueldo;\n}\npublic override Cumpleaños()\n{\nEdad++;\nConsole.WriteLine("Incrementada edad de trabajador");\n}\npublic static void Main()\n{\nPersona p = new Trabajador("Josan", 22, "77588260-Z", 100000);\np.Cumpleaños();\n// p.Sueldo++; //ERROR: Sueldo no es miembro de Persona\n}\n}</item>
+        <item></item>
     </string-array>
     <string-array name="ef4java">
-
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="ef4Cplus">
-
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 </resources>
