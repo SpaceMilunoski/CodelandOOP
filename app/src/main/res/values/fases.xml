@@ -23,13 +23,30 @@
         <item>Cuando se desarrolla una aplicación, a veces es necesario ocultar los tipos de datos usados para que el usuario permanezca independiente de los detalles de los mismos. De esta manera, el usuario no es sensible a los cambios que se puedan producir en los tipos de datos elegidos dentro de una clase.\n\nLa encapsulación suele lograrse al declarar algunos datos como: privados (private) que solo son accesibles por los métodos de la clase a la que pertenece; públicos (public) que son accesibles desde cualquier lugar en el que exista un objeto de la clase; y protegidos (protected) que solo son accesibles desde las clases que se hereden de la clase que lo contiene.</item>
     </string-array>
     <string-array name="ef1C">
-
+        <item></item>
+        <item></item>
+        <item>Clase objeto_clase = new Clase;\n objeto_clase.atributo_objeto</item>
+        <item>public class Ejemplo{\n
+            ///Atributos\n
+        }</item>
     </string-array>
     <string-array name="ef1java">
-
+        <item></item>
+        <item></item>
+        <item>Clase objeto_clase = new Clase();\n
+        objeto_Clase.atributo_objeto;</item>
+        <item>public class Ejemplo{\n
+            // Atributos\n
+        }</item>
     </string-array>
     <string-array name="ef1Cplus">
-
+        <item></item>
+        <item></item>
+        <item>Clase objeto_clase = new Clase();\n
+        objeto_clase->atributo_de_objeto;</item>
+        <item>public class Ejemplo{\n
+                ////Atributos\n
+            }</item>
     </string-array>
     <string-array name="ef2C">
         <item>class Persona{\n private:\n String nombre;\n String apellido;\n\npublic:\n// Constructor\nPersona(String nombre2, String apellido2)\n{\nnombre=nombre2;\napellido=apellido2;\n}\n};\n\n//implementación constructor\nPersona persona1(“Antonio”,”Ayola”);\n</item>
@@ -50,22 +67,19 @@
         <item></item>
     </string-array>
     <string-array name="ef3C">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>private Class Ejemplo{}\n private  Tipo_dato nombre_variable\n private  tipo_dato nombreMetodo(){}</item>
+        <item>public  Class Ejemplo{}\n public  Tipo_dato nombre_variable\n public  tipo_dato nombreMetodo(){}</item>
+        <item>protected  Class Ejemplo{}\n protected  Tipo_dato nombre_variable\n protected  tipo_dato nombreMetodo(){}</item>
     </string-array>
     <string-array name="ef3java">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>private Class Ejemplo{}\n private  Tipo_dato nombre_variable\n private  tipo_dato nombreMetodo(){}</item>
+        <item>public  Class Ejemplo{}\n public  Tipo_dato nombre_variable\n public  tipo_dato nombreMetodo(){}</item>
+        <item>protected  Class Ejemplo{}\n protected  Tipo_dato nombre_variable\n protected  tipo_dato nombreMetodo(){}</item>
     </string-array>
     <string-array name="ef3Cplus">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Class Ejemplo{private :}\n private : Tipo_dato nombre_variable\n private : tipo_dato nombreMetodo(){}</item>
+        <item> Class Ejemplo{public :}\n public : Tipo_dato nombre_variable\n public : tipo_dato nombreMetodo(){}</item>
+        <item> Class Ejemplo{protected :}\n protected : Tipo_dato nombre_variable\n protected : tipo_dato nombreMetodo(){}</item>
     </string-array>
     <string-array name="ef4C">
         <item>\nclass Persona{\npublic string Nombre;\npublic int Edad;\n\nvoid Cumpleaños()\n{\nEdad++;\n}\npublic Persona (string nombre, int edad)\n{\nNombre = nombre;\nEdad = edad;\n}\n}\nclass Trabajador: Persona\n{\npublic int Sueldo;\nTrabajador(string nombre, int edad, int sueldo): base(nombre, edad)\n{\nSueldo = sueldo;\n}\npublic static void Main()\n{\nTrabajador p = new Trabajador("Josan", 22, "77588260-Z", 100000);\nConsole.WriteLine ("Nombre="+p.Nombre);\nConsole.WriteLine ("Edad="+p.Edad);\nConsole.WriteLine ("Sueldo="+p.Sueldo);\n }}</item>
