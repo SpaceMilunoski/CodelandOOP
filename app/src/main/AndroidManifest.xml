@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.daniel.codelandoop">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
@@ -17,8 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".fases" />
-        <activity android:name=".temas"
-            android:theme="@style/AppTheme2"/>
+        <activity
+            android:name=".temas"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".Cuestionario"
+            android:theme="@style/AppTheme2"></activity>
     </application>
 
 </manifest>

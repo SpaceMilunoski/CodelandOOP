@@ -47,7 +47,8 @@ public class fases extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position==ni-2){
-
+                    Intent in = new Intent(fases.this,Cuestionario.class);
+                    startActivity(in);
                 }else if (position==ni-1){
 
                 }else {
