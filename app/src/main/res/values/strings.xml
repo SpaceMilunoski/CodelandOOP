@@ -6,6 +6,12 @@
         <item>Fase 3</item>
         <item>Fase 4</item>
     </string-array>
+    <string-array name="Cuestionarios">
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSc2n-JIDT1dJQNpECzLIXrYVF_vmO5qywrWeUR8E9PE5gKq4Q/viewform?usp=sf_link</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSd40BE2wvjTA_Gw1DtKvcENj1YUIWjhd-bnhdreQEhFr3_-wA/viewform?usp=sf_link</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSc9Cf5l0SO8BGcdms3wQg5jegHNS6888dvNGAqEHTc-yn4tSQ/viewform?usp=sf_link</item>
+        <item>https://docs.google.com/forms/d/e/1FAIpQLSdmF2-iBL89Y5sNmWdk4leJ7-pKq86UBzb9EY0k7EKMiiTlhQ/viewform?usp=sf_link</item>
+    </string-array>
     <string-array name="nomfases">
         <item>Conceptos Basicos</item>
         <item>Constructores y métodos de acceso</item>

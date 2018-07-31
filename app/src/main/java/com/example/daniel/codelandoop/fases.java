@@ -23,6 +23,7 @@ public class fases extends AppCompatActivity {
         setContentView(R.layout.activity_fases);
         final ListView lvFases = (ListView) findViewById(R.id.lvTemas);
         String [] items = {};
+        final String [] cuestionario = getResources().getStringArray(R.array.Cuestionarios);
 
         int i = getIntent().getIntExtra("fase",0);
 
@@ -48,17 +49,7 @@ public class fases extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position==ni-2){
                     Intent in = new Intent(fases.this,Cuestionario.class);
-                    String url="";
-                    if (j==0){
-                        url="https://docs.google.com/forms/d/e/1FAIpQLSc2n-JIDT1dJQNpECzLIXrYVF_vmO5qywrWeUR8E9PE5gKq4Q/viewform?usp=sf_link";
-                    }else if (j==1){
-                        url="https://docs.google.com/forms/d/e/1FAIpQLSd40BE2wvjTA_Gw1DtKvcENj1YUIWjhd-bnhdreQEhFr3_-wA/viewform?usp=sf_link";
-                    }else if (j==2){
-                        url="https://docs.google.com/forms/d/e/1FAIpQLSc9Cf5l0SO8BGcdms3wQg5jegHNS6888dvNGAqEHTc-yn4tSQ/viewform?usp=sf_link";
-                    }else if (j==3){
-                        url="https://docs.google.com/forms/d/e/1FAIpQLSdmF2-iBL89Y5sNmWdk4leJ7-pKq86UBzb9EY0k7EKMiiTlhQ/viewform?usp=sf_link";
-                    }
-                    in.putExtra("url",url);
+                    in.putExtra("url",cuestionario[j]);
                     startActivity(in);
                 }else if (position==ni-1){
 
