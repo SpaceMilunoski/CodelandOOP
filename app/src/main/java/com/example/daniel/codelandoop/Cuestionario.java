@@ -13,16 +13,10 @@ public class Cuestionario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuestionario);
         WebView cuestionario = (WebView) findViewById(R.id.wvCuestionario);
-        cuestionario.setWebViewClient(new myclienteweb());
-        WebSettings settings =  cuestionario.getSettings();
+        cuestionario.setWebViewClient(new WebViewClient());
+        WebSettings settings = cuestionario.getSettings();
+        settings.setJavaScriptEnabled(true);
         cuestionario.loadUrl(url);
 
-    }
-    private  class  myclienteweb extends WebViewClient{
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            view.loadUrl(url);
-            return true;
-        }
     }
 }
