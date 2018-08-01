@@ -70,6 +70,11 @@ public class temas extends AppCompatActivity {
         final String java=eJava[posicion];
         final String cs=eCgato[posicion];
         final String cmm=eCplus[posicion];
+        if (cmm.length()==0){
+            btnCmm.setVisibility(View.INVISIBLE);
+            btnCs.setVisibility(View.INVISIBLE);
+            btnJava.setVisibility(View.INVISIBLE);
+        }
         btnCmm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
