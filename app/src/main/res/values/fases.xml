@@ -50,21 +50,21 @@
     </string-array>
     <string-array name="ef2C">
         <item>class Persona{\n private:\n String nombre;\n String apellido;\n\npublic:\n// Constructor\nPersona(String nombre2, String apellido2)\n{\nnombre=nombre2;\napellido=apellido2;\n}\n};\n\n//implementación constructor\nPersona persona1(“Antonio”,”Ayola”);\n</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>class Car\n{\n~Car()  // destructor\n{\n// cleanup statements…\n}\n}\n</item>
+        <item>public class Persona\n{\nprivate string nombre;\nprivate string apellido;\n\npublic Persona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\npublic void getnombre() {\nReturn nombre;\n}\npublic void getapellido() {\nReturn apellido;\n}\n}\n</item>
+        <item>public class Persona\n{\nprivate string nombre;\nprivate string apellido;\n\npublic Persona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\n\npublic void setnombre(string nombre2) {\nnombre=nombre2;\n}\npublic void setapellido(string apellido2) {\napellido=apellido2;\n}\n}\n</item>
     </string-array>
     <string-array name="ef2java">
         <item>public class Persona {\nprivate String nombre;\nprivate String apellido;\n\npublic Persona(String nombre, String apellido){\nthis.nombre = nombre;\nthis.apellido = apellido;\n}\n}\n\npublic class Main {\n\npublic static void main(String[] args) {\n\nPersona persona1 = new Persona("Antonio", "Ayola");\n}\n}\n</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>En java no existen los destructores, esto es gracias al recolector de basura de la máquina virtual de java. Como su nombre lo dice, el recolector de basura recolecta todas las variables u objetos que no se estén utilizando y que no haya ninguna referencia a ellos por una clase en ejecución, liberando así automáticamente la memoria de nuestra computadora. </item>
+        <item>public class Estudiante\n{\nprivate String nombre;\nprivate String apellido;vprivate String correo;\n\npublic String getNombre()\n{\nreturn nombre;v}\npublic String getApellido()\n{\nreturn apellido;\n}\npublic String getCorreo()\n{\nreturn correo;\n}\n}</item>
+        <item>public class Estudiante\n{\nprivate String nombre;\nprivate String apellido;\nprivate String correo;\n\npublic void setNombre(String nombre)\n{\nthis.nombre = nombre;\n}\npublic void setApellido(String apellido)\n{\nthis.apellido = apellido;\n}\npublic void setCorreo(String correo)\n{\nthis.correo = correo;\n}\n}</item>
     </string-array>
     <string-array name="ef2Cplus">
         <item>public class Persona\n{\nprivate string nombre;\nprivate string apellido;\n\npublic Persona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\n}\n//implementación\n\nPersona persona1 = new Persona(“Antonio”,”Ayola”);</item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Destructores en un tipo de referencia realizan una limpieza determinista de recursos.Finalizadores limpia los recursos no administrados y puede llamarse determinista el destructor o no determinista por el recolector de elementos no utilizados.\n\nclass classname {\n~classname() {}   // destructor\n! classname() {}   // finalizer\n};\n</item>
+        <item>public class Persona\n{\nPrivate:\nstring nombre;\nstring apellido;\n\npublic:\nPersona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\nvoid getnombre() {\nReturn nombre;\n}\nvoid getapellido() {\nReturn apellido;\n}\n};\n</item>
+        <item>public class Persona\n{\nPrivate:\nstring nombre;\nstring apellido;\n\npublic:\nPersona(string nombre1, string apellido1)\n{\nnombre = nombre1;\napellido = apellido1;\n}\nvoid setnombre(string nombre2) {\nnombre=nombre2;\n}\nvoid apellido(string apellido2) {\napellido=apellido2;\n}\n};\nr</item>
     </string-array>
     <string-array name="ef3C">
         <item>private Class Ejemplo{}\n private  Tipo_dato nombre_variable\n private  tipo_dato nombreMetodo(){}</item>
