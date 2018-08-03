@@ -52,7 +52,10 @@ public class fases extends AppCompatActivity {
                     in.putExtra("url",cuestionario[j]);
                     startActivity(in);
                 }else if (position==ni-1){
-
+                    Intent eje = new Intent(fases.this,Ejercicio.class);
+                    eje.putExtra("tema",position);
+                    eje.putExtra("fase",j);
+                    startActivity(eje);
                 }else {
                     Intent i = new Intent(fases.this,temas.class);
                     i.putExtra("tema",position);
