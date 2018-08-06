@@ -96,4 +96,10 @@
         <item></item>
         <item></item>
     </string-array>
+    <string-array name="ejercicios">
+        <item>eje 1</item>
+        <item>eje 2</item>
+        <item> eje 3</item>
+        <item>eje 4</item>
+    </string-array>
 </resources>

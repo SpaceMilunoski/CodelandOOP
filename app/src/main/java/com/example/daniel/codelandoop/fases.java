@@ -53,7 +53,7 @@ public class fases extends AppCompatActivity {
                     startActivity(in);
                 }else if (position==ni-1){
                     Intent eje = new Intent(fases.this,Ejercicio.class);
-                    eje.putExtra("tema",position);
+                    //eje.putExtra("tema",position);
                     eje.putExtra("fase",j);
                     startActivity(eje);
                 }else {

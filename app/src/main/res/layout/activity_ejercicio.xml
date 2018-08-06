@@ -68,7 +68,7 @@
                         android:id="@+id/tvEjercicio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="0dp"
                         android:layout_marginBottom="10dp"
                         android:textColor="@color/colorSecondaryText"
                         android:text=""/>
