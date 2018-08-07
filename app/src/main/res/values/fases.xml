@@ -97,9 +97,9 @@
         <item></item>
     </string-array>
     <string-array name="ejercicios">
-        <item>eje 1</item>
+        <item>En tu lenguaje de programación favorito crea una clase de nombre de circulo la cual tendrá como atributo un radio y crea tres objetos de esta clase con diferentes radios.</item>
         <item>eje 2</item>
-        <item> eje 3</item>
+        <item>Crea dos clases la clase padre deberá tener un atributo privado, un atributo público y un atributo protegido y la segunda intentara acceder a esos atributos. </item>
         <item>eje 4</item>
     </string-array>
 </resources>
