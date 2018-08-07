@@ -87,19 +87,130 @@
         <item></item>
     </string-array>
     <string-array name="ef4java">
-        <item></item>
+        <item>//Clase Padre Base Alumno\n
+            public class Alumno {\n\n
+
+public String getNombre() {\n
+return nombre;\n
+}\n\n
+
+public String getClases() {\n
+return clases;\n
+}\n\n
+
+public String getGrado() {\n
+return grado;\n
+}\n\n
+
+public String getGrupo() {\n
+return grupo;\n
+}\n\n
+
+public void setNombre(String nombre) {\n
+this.nombre = nombre;\n
+}\n\n
+
+public void setClases(String clases) {\n
+this.clases = clases;\n
+}\n\n
+
+public void setGrado(String grado) {\n
+this.grado = grado;\n
+}\n\n
+
+public void setGrupo(String grupo) {\n
+this.grupo = grupo;\n
+}\n
+private String nombre;\n
+private String clases;\n
+private String grado;\n
+private String grupo;\n\n
+
+protected void ir_a_clase(){\n\
+
+}\n\n
+
+protected void estudiar(){\n
+
+}\n
+}\n
+//Clase Hija Alumno Regular\n
+            public class Regular extends Alumno{\n\n
+
+public Regular(){\n
+
+}\n\n
+
+protected void pagar_inscripcion(){\n
+
+}\n\n
+
+protected void matricularse(){\n
+
+}\n
+}\n
+        </item>
         <item></item>
         <item></item>
     </string-array>
     <string-array name="ef4Cplus">
-        <item></item>
+        <item>// Clase base Persona:\n
+class Persona {\n
+  public:\n
+   Persona(char *n, int e);\n
+   const char *LeerNombre(char *n) const;\n
+   int LeerEdad() const;\n
+   void CambiarNombre(const char *n);\n
+   void CambiarEdad(int e);\n\n
+
+  protected:\n
+   char nombre[40];\n
+   int edad;\n
+};\n\n
+
+// Clase derivada Empleado:\n
+class Empleado : public Persona {\n
+  public:\n
+   Empleado(char *n, int e, float s);\n</item>
         <item></item>
         <item></item>
     </string-array>
     <string-array name="ejercicios">
         <item>En tu lenguaje de programación favorito crea una clase de nombre de circulo la cual tendrá como atributo un radio y crea tres objetos de esta clase con diferentes radios.</item>
-        <item>eje 2</item>
+        <item>En tu lenguaje de programación favorito crea una clase llamada Cuadrado que contenga un ùnico atributo decimal llamado area, la clase tendra el constructor por defecto  y un constructor con parametros para inicializar el area con un valor\nLa clase tendra los mètodos getter y setter.\n\n  Una vez creada la clase, escribe un método main para probar la clase.\n\nAl final utiliza un destructor para eliminar el objeto.</item>
         <item>Crea dos clases la clase padre deberá tener un atributo privado, un atributo público y un atributo protegido y la segunda intentara acceder a esos atributos. </item>
-        <item>eje 4</item>
+        <item>Crear Clase Programador que herede de empleado\n\n
+            Empleado\n
+
+Atributos:\n\n
+
+- nombre: tipo cadena (Debe ser nombre y apellido)\n
+- cedula: tipo cadena\n
+- edad : entero (Rango entre 18 y 45 años)\n
+- casado: boolean\n
+- salario: tipo numérico doble\n\n
+
+Métodos:\n
+- Constructor con y sin parámetros de entrada\n
+- Método que permita mostrar la clasificación según la edad de acuerdo al siguiente algoritmo:\n
+Si edad es menor o igual a 21, Principiante\n
+Si edad es mayor o igual a 22 y si es menor o igual a 35, Intermedio\n
+Si edad es >35, Senior.-\n\n
+
+- Imprimir los datos del empleado por pantalla.\n\n
+
+- Un método que permita aumentar el salario en un porcentaje que sería pasado como parámetro al método.\n\n
+
+2. Programador (Especialización de Empleado). Clase que hereda de Empleado todos los atributos y métodos.\n
+
+- Atributos:\n\n
+
+- lineasDeCodigoPorHora : tipo entero\n
+
+- lenguajeDominante: tipo cadena\n\n
+
+- Metodos:\n
+
+- Constructor con y sin parámetos de entrada.\n</item>
     </string-array>
 </resources>
