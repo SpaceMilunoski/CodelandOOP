@@ -13,13 +13,13 @@
         <item>https://docs.google.com/forms/d/e/1FAIpQLSdmF2-iBL89Y5sNmWdk4leJ7-pKq86UBzb9EY0k7EKMiiTlhQ/viewform?usp=sf_link</item>
     </string-array>
     <string-array name="nomfases">
-        <item>Conceptos Basicos</item>
+        <item>Conceptos Básicos</item>
         <item>Constructores y métodos de acceso</item>
         <item>Encapsulamiento</item>
         <item>Conceptos Avanzados</item>
     </string-array>
     <string-array name="fase1">
-        <item>Concepto de Poo</item>
+        <item>Concepto de POO</item>
         <item>Concepto de abstracción</item>
         <item>¿Qué es un objeto?</item>
         <item>¿Qué es una clase?</item>
@@ -36,7 +36,7 @@
     </string-array>
     <string-array name="fase3">
         <item>Métodos/Variables privadas</item>
-        <item>Métodos/Variables publicas</item>
+        <item>Métodos/Variables públicas</item>
         <item>Métodos/Variables protegidas</item>
         <item>Cuestionario</item>
         <item>Ejercicios</item>
